@@ -14,14 +14,16 @@ const WorkCard = ({ title, index, link }: WorkCardProps) => {
     <Link 
       to={link}
       target="_blank"
-      className="inline-block py-4 border-gray-200 relative transition-colors duration-300"
-      style={{ animationDelay: `${0.1 + index * 0.1}s` }}
-    >
-      <h3 className="text-lg font-medium underline">{title}</h3>
-    </Link>
-  );
-};
-
+      className="w-fit py-4 border-gray-200 relative transition-colors duration-300 pointer-events-none"
+        style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+      >
+        <h3 className="text-lg font-medium underline hover:text-gray-500 pointer-events-auto">
+          {title}
+        </h3>
+      </Link>
+    );
+  };
+  
 const PreviousWork = () => {
   const previousWorkData = useData();
   const previousWork = previousWorkData?.previousWork || [];
@@ -40,6 +42,7 @@ const PreviousWork = () => {
               title={post.title}
               link={post.link}
               index={index}
+              className="w-fit"  
             />
           ))}
         </div>

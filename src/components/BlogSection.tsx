@@ -1,9 +1,7 @@
-
-import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import {useData} from "@/hooks/use-data";
 
 interface BlogCardProps {
   title: string;
@@ -30,11 +28,8 @@ const BlogCard = ({ title, index, link }: BlogCardProps) => {
 };
 
 const BlogSection = () => {
-  const blogPosts = [
-    { title: "Blog 1", link: "/blog/1" },
-    { title: "Blog 2", link: "/blog/2" },
-    { title: "Blog 3", link: "/blog/3" },
-  ];
+  const blogData = useData();
+  const blogPosts = blogData?.blog || [];
 
   return (
     <section className="py-16 px-6 md:px-12">
@@ -43,7 +38,7 @@ const BlogSection = () => {
           <h2 className="text-2xl md:text-3xl font-medium mb-4">Blogs</h2>
         </div>
         
-        <div className="border-b border-gray-200">
+         {blogPosts.length > 0 ? ( <div className="border-b border-gray-200">
           {blogPosts.map((post, index) => (
             <BlogCard 
               key={index}
@@ -52,7 +47,9 @@ const BlogSection = () => {
               index={index}
             />
           ))}
-        </div>
+        </div>) : (
+          <p className="text-gray-500">Coming Soon</p>
+        )}
       </div>
     </section>
   );
