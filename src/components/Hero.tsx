@@ -7,7 +7,7 @@ const Hero = () => {
       
       <div className="max-w-4xl mx-auto w-full">
       <div>
-        <img src="src/assets/gojo.png"  alt="Hero" className="h-[400px]" />
+        <img src="public/gojo.png"  alt="Hero" className="h-[400px]" />
         </div>
         <div className="mb-6 animate-slide-in flex items-center" style={{ animationDelay: "0.1s" }} onClick={() => window.location.href = "mailto:imrankhanxdev@gmail.com"}>
           <ButtonCustom variant="outline" size="default" className="rounded-2xl border-[#77B254] border-2 flex">
