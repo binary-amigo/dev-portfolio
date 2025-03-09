@@ -109,7 +109,6 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
       <main className="flex-1 pt-28 px-6 md:px-12 animate-page-transition">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-medium mb-12 animate-slide-in">
