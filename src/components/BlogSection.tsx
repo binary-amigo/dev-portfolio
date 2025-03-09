@@ -40,7 +40,7 @@ const BlogSection = () => {
     <section className="py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         <div className="mb-12 animate-slide-in">
-          <h2 className="text-2xl md:text-3xl font-medium mb-4">Latest Blog Posts</h2>
+          <h2 className="text-2xl md:text-3xl font-medium mb-4">Blogs</h2>
         </div>
         
         <div className="border-b border-gray-200">

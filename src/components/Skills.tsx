@@ -1,5 +1,5 @@
 
-import React from "react";
+import { useData } from "@/hooks/use-data";
 
 interface SkillProps {
   name: string;
@@ -9,7 +9,7 @@ interface SkillProps {
 const Skill = ({ name, index }: SkillProps) => {
   return (
     <div 
-      className="bg-black text-white px-4 py-2 rounded-full text-sm inline-flex items-center justify-center transition-all hover:scale-105 animate-slide-in"
+      className="cursor-pointer bg-black text-white px-4 py-2 rounded-full text-sm inline-flex items-center justify-center transition-all hover:scale-105 animate-slide-in"
       style={{ animationDelay: `${0.1 + index * 0.05}s` }}
     >
       {name}
@@ -18,16 +18,7 @@ const Skill = ({ name, index }: SkillProps) => {
 };
 
 const Skills = () => {
-  const skills = [
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Shadcn UI",
-    "Figma",
-    "Node.js",
-    "MongoDB",
-    "Firebase",
-  ];
+  const skills = useData()?.skills || [];
 
   return (
     <section className="py-16 px-6 md:px-12 bg-gray-50">

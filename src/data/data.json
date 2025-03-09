@@ -1,0 +1,49 @@
+{
+    "previousWork": [
+        {
+            "title": "Sorting Algorithm Visualizer",
+            "link": "https://sorting-algorithm-visualizer-jet.vercel.app/"
+        },
+        {
+            "title": "Bites",
+            "link": "https://bites.vercel.app/"
+        },
+        {
+            "title": "Sheesh",
+            "link": "https://sheesh.vercel.app/"
+        },
+        {
+            "title": "CryptoPlace",
+            "link": "https://crypto-place.vercel.app/"
+        }
+    ],
+    "blog": [
+        {
+            "title": "Blog 1",
+            "link": "/blog/1"
+        },
+        {
+            "title": "Blog 2",
+            "link": "/blog/2"
+        },
+        {
+            "title": "Blog 3",
+            "link": "/blog/3"
+        }
+    ],
+    "skills": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "Python",
+        "C++",
+        "C#",
+        "Java",
+        "HTML",
+        "CSS",
+        "Git",
+        "Figma",
+        "Tailwind CSS"
+    ]
+}

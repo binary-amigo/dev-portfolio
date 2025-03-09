@@ -15,7 +15,7 @@ const Footer = () => {
           
           <div className="flex items-center space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/binary-amigo"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-gray-100 transition-colors"
@@ -24,7 +24,7 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/imran-khan86/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full hover:bg-gray-100 transition-colors"
@@ -33,7 +33,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:example@example.com"
+              href="mailto:imrankhanxdev@gmail.com"
               className="p-2 rounded-full hover:bg-gray-100 transition-colors"
               aria-label="Email"
             >
