@@ -6,9 +6,15 @@ const Hero = () => {
     <section className="min-h-[70vh] flex flex-col justify-center pt-20 px-6 md:px-12 animate-page-transition">
       
       <div className="max-w-4xl mx-auto w-full">
-      <div>
-        <img src="/gojo.png"  alt="Hero" className="h-[400px]" />
-        </div>
+      <div className="flex justify-start">
+  <img 
+    src="/gojo.png"  
+    alt="Hero" 
+    className="w-full h-auto max-w-[100%] sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] object-cover" 
+  />
+</div>
+
+
         <div className="mb-6 animate-slide-in flex items-center" style={{ animationDelay: "0.1s" }} onClick={() => window.location.href = "mailto:imrankhanxdev@gmail.com"}>
           <ButtonCustom variant="outline" size="default" className="rounded-2xl border-[#77B254] border-2 flex">
           <span className="mr-2 text-lg text-[#77B254]">&bull;</span><span className="text-lg">Open to work </span>

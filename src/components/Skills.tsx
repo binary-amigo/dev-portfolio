@@ -9,11 +9,12 @@ interface SkillProps {
 const Skill = ({ name, index }: SkillProps) => {
   return (
     <div 
-      className="cursor-pointer bg-black text-white px-4 py-2 rounded-full text-sm inline-flex items-center justify-center transition-all hover:scale-105 animate-slide-in"
-      style={{ animationDelay: `${0.1 + index * 0.05}s` }}
-    >
-      {name}
-    </div>
+  className="cursor-pointer bg-black text-white px-4 py-2 rounded-full text-sm inline-flex items-center justify-center transition-all hover:bg-transparent hover:text-black hover:border-black hover:scale-105 animate-slide-in border border-transparent"
+  style={{ animationDelay: `${0.1 + index * 0.05}s` }}
+>
+  {name}
+</div>
+
   );
 };
 
